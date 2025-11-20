@@ -22,10 +22,29 @@ To create a Python class `Student` with a destructor.
 ### PROGRAM
 
 ```
+class Student:
+	def __init__(self, name, age):
+		self.name = name
+		self.age = age
+
+	def printDetail(self):
+		print(f"My name is {self.name} and I am {self.age} years old.")
+
+	#add destructor
+	def dels(self):
+	    print(f"{self.name} student is deleted.")
+
+
+s1 = Student("Vishvajit Rao", 22)
+s1.printDetail()
+s1.dels()
 
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/2cc60c05-9958-4c06-b64f-4ad5800d3fe1)
+
 
 
 ### RESULT
+Thus, a Python class Student with a destructor are verified.
